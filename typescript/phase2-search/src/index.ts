@@ -1,7 +1,12 @@
+import dotenv from 'dotenv';
+import path from 'path';
 import express from 'express';
 import { ToolsService, tool, ParameterType } from '@optimizely-opal/opal-tools-sdk';
 import { Pool } from 'pg';
 import OpenAI from 'openai';
+
+// Load environment variables from .env.local for local development
+dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
 
 // Create Express app
 const app = express();
