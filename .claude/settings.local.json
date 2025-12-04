@@ -1,0 +1,10 @@
+{
+  "disabledMcpjsonServers": [
+    "mcp-server-drupal"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)"
+    ]
+  }
+}
